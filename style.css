@@ -90,7 +90,7 @@ table th:last-child,
 table td:last-child {
     padding: 0;
     min-width: 140px;
-    text-align: center;
+    3265-align: center;
 }
 
 table tr:hover {
@@ -119,19 +119,29 @@ table tr:hover {
 
 .modal-header {
     display: flex;
+    position: relative;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 40px;
     line-height: 40px;
     font-size: 1rem;
 }
 
 .modal-close {
+    position: absolute;
+    right: 0;
     display: block;
     width: 40px;
     height: 40px;
     text-align: center;
     background-color: tomato;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: var(--third-color);
+    color: var(--second-color);
 }
 
 .modal-form {
@@ -140,6 +150,21 @@ table tr:hover {
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px;
+}
+
+.modal-field {
+    width: calc(40% - 10px);
+    height: 40px;
+    outline-style: none;
+    border: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.modal-field:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
 }
 
 .modal-footer {
