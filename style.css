@@ -21,6 +21,9 @@ header {
     text-align: center;
     line-height: 70px;
     box-shadow: 0 1px 2px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
@@ -90,7 +93,7 @@ table th:last-child,
 table td:last-child {
     padding: 0;
     min-width: 140px;
-    3265-align: center;
+    text-align: center;
 }
 
 table tr:hover {
@@ -104,6 +107,13 @@ table tr:hover {
     width: 100%;
     height: 100%;
     background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 1;
 }
 
 .modal-content {
@@ -125,6 +135,7 @@ table tr:hover {
     height: 40px;
     line-height: 40px;
     font-size: 1rem;
+    color: var(--second-color);
 }
 
 .modal-close {
@@ -173,4 +184,10 @@ table tr:hover {
     padding: 0 20px;
 }
 
-footer {}
+footer {
+    width: 100;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+}
