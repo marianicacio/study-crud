@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-    --primary-color: #ED254E;
-    --second-color: #f5f2d4;
-    --third-color: #493B2A;
-    --fourth-color: #ffdbe9;
+    --primary-color: #a2d3c7;
+    --second-color: #7a5f4e;
+    --third-color: #ef8e7d;
+    --fourth-color: #edd8bb;
 }
 
 body {
